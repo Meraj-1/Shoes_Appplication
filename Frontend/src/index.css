@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+@keyframes slider {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+* {
+
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+
+}
+
+.animate-slider {
+  display: flex;
+  gap: 1rem;
+  animation: slider 150s linear infinite;
+  width: max-content;
+}
+
+  
