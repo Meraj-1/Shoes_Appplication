@@ -11,7 +11,7 @@ import Defaut from './section/Defaut';
 import About from './section/About';
 import Contact from './section/Contact';
 import Collection from './components/Collection';
-
+import ProductPage from './components/ProductPage';
 
 
 function App() {
@@ -24,6 +24,7 @@ function App() {
         <Route path='/sign-in' element={<Login/>} />
         {/* <Route path='/register' element={<Register/>} /> */}
         <Route path="/" element={<Home/>}/>
+        <Route path="/product/:id" element={<ProductPage />} />
         <Route path='/brands' element={<BrandComp/>} />
         <Route path='*' element={<Defaut/>}/>
         <Route path='/about' element={<About/>}/>

@@ -10,22 +10,22 @@ const HeroSection = () => {
       setCurrentImageIndex((prevIndex) =>
         prevIndex === images.length - 1 ? 0 : prevIndex + 1
       );
-    }, 3000); // Change image every 3 seconds
+    }, 3000); 
 
-    return () => clearInterval(interval); // Cleanup on component unmount
+    return () => clearInterval(interval); 
   }, [images.length]);
 
   return (
     <div
       className="relative flex items-center justify-center text-white"
       style={{
-        height: "100vh", // Ensures full screen height
+        height: "100vh", 
         backgroundImage: `url(${images[currentImageIndex]})`,
-        backgroundSize: "cover", // Ensures the image covers the entire background
-        backgroundPosition: "center", // Centers the image
-        backgroundRepeat: "no-repeat", // Prevents the image from repeating
-        backgroundAttachment: "fixed", // Keeps the image fixed during scroll
-        transition: "background-image 1.5s ease-in-out", // Smooth transition
+        backgroundSize: "cover",
+        backgroundPosition: "center", 
+        backgroundRepeat: "no-repeat", 
+        backgroundAttachment: "fixed", 
+        transition: "background-image 1.5s ease-in-out", 
       }}
     >
       {/* Overlay */}

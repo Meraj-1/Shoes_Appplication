@@ -15,11 +15,9 @@
 }
 
 * {
-
-  font-family: "Fira Sans", sans-serif;
-  font-weight: 500;
+  font-family: "Fira Sans", serif;
+  font-weight: 600;
   font-style: normal;
-
 }
 
 .animate-slider {
@@ -29,4 +27,3 @@
   width: max-content;
 }
 
-  
